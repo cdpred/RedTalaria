@@ -1,3 +1,8 @@
+# Version 1.0.1
+
+New functionality:
+* allow linking Blueprint comment nodes
+
 # Version 1.0
 
 Endpoints provided:

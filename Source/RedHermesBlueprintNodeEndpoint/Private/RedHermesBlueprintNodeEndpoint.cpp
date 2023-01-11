@@ -2,6 +2,7 @@
 
 #include "RedHermesBlueprintNodeEndpoint.h"
 
+#include "EdGraphNode_Comment.h"
 #include "RedHermesGraphNodeEndpoint.h"
 #include "RedHermesGraphNodeEndpointEditorExtension.h"
 #include "Kismet2/KismetEditorUtilities.h"
@@ -83,7 +84,7 @@ void FRedHermesBlueprintNodeEndpointModule::HandleRequest(FGuid NodeGuid, UObjec
 
 void FRedHermesBlueprintNodeEndpointModule::ProvideNodeExtensionHook(const UEdGraphNode* Node, const UEdGraph* /*Graph*/, TSet<FName>& ExtensionHooks)
 {
-	if (Node->IsA<UK2Node>())
+	if (Node->IsA<UK2Node>() || Node->IsA<UEdGraphNode_Comment>())
 	{
 		ExtensionHooks.Emplace(FName(TEXT("EdGraphSchemaNodeActions")));
 	}
