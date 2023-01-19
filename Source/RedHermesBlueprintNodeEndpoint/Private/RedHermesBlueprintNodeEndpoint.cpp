@@ -2,10 +2,13 @@
 
 #include "RedHermesBlueprintNodeEndpoint.h"
 
+#include "EdGraph/EdGraph.h"
 #include "EdGraphNode_Comment.h"
+#include "Editor.h"
+#include "K2Node.h"
+#include "Kismet2/KismetEditorUtilities.h"
 #include "RedHermesGraphNodeEndpoint.h"
 #include "RedHermesGraphNodeEndpointEditorExtension.h"
-#include "Kismet2/KismetEditorUtilities.h"
 
 #define LOCTEXT_NAMESPACE "FRedHermesBlueprintNodeEndpointModule"
 
@@ -13,14 +16,12 @@ void FRedHermesBlueprintNodeEndpointModule::StartupModule()
 {
 	if (const auto RedHermesGraphNodeEndpoint = GEditor->GetEditorSubsystem<URedHermesGraphNodeEndpoint>())
 	{
-		OnRequestDelegateHandle
-			= RedHermesGraphNodeEndpoint->OnRequest().AddStatic(&FRedHermesBlueprintNodeEndpointModule::HandleRequest);
+		OnRequestDelegateHandle = RedHermesGraphNodeEndpoint->OnRequest().AddStatic(&FRedHermesBlueprintNodeEndpointModule::HandleRequest);
 	}
 
 	if (const auto NodeExtensionSubsystem = GEditor->GetEditorSubsystem<URedHermesGraphNodeEndpointEditorExtension>())
 	{
-		OnNodeMenuExtensionHookRequestDelegateHandle
-			= NodeExtensionSubsystem->OnNodeMenuExtensionHookRequest().AddStatic(&FRedHermesBlueprintNodeEndpointModule::ProvideNodeExtensionHook);
+		OnNodeMenuExtensionHookRequestDelegateHandle = NodeExtensionSubsystem->OnNodeMenuExtensionHookRequest().AddStatic(&FRedHermesBlueprintNodeEndpointModule::ProvideNodeExtensionHook);
 	}
 }
 

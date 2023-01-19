@@ -4,6 +4,10 @@
 
 #include "CoreMinimal.h"
 
+class UEdGraph;
+class UEdGraphNode;
+class UObject;
+
 class FRedHermesGraphNodeEndpointUtils
 {
 public:

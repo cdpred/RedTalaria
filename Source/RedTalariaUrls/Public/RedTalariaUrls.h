@@ -4,6 +4,8 @@
 
 #include "CoreMinimal.h"
 
+#include "Modules/ModuleInterface.h"
+
 class FRedTalariaUrlsModule : public IModuleInterface
 {
 public:

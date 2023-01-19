@@ -4,6 +4,13 @@
 
 #include "CoreMinimal.h"
 
+#include "Modules/ModuleInterface.h"
+#include "UObject/NameTypes.h"
+
+class UObject;
+class UEdGraphNode;
+class UEdGraph;
+
 class FRedHermesBlueprintNodeEndpointModule : public IModuleInterface
 {
 public:

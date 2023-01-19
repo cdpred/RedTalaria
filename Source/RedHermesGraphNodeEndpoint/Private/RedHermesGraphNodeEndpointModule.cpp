@@ -2,6 +2,8 @@
 
 #include "RedHermesGraphNodeEndpointModule.h"
 
+#include "Modules/ModuleManager.h"
+
 void FRedHermesGraphNodeEndpointModule::StartupModule() {}
 
 void FRedHermesGraphNodeEndpointModule::ShutdownModule() {}

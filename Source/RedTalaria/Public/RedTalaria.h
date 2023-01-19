@@ -4,6 +4,8 @@
 
 #include "CoreMinimal.h"
 
+#include "Modules/ModuleInterface.h"
+
 class FSlateStyleSet;
 
 class REDTALARIA_API FRedTalariaModule : public IModuleInterface

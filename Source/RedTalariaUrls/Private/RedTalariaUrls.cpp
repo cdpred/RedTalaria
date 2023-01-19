@@ -2,6 +2,8 @@
 
 #include "RedTalariaUrls.h"
 
+#include "Modules/ModuleManager.h"
+
 #define LOCTEXT_NAMESPACE "FRedTalariaUrlsModule"
 
 void FRedTalariaUrlsModule::StartupModule() {}

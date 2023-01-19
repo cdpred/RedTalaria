@@ -2,6 +2,8 @@
 
 #include "RedHermesLevelAtCameraCoordsEndpointModule.h"
 
+#include "Modules/ModuleManager.h"
+
 #define LOCTEXT_NAMESPACE "FRedHermesLevelAtCameraCoordsEndpointModule"
 
 void FRedHermesLevelAtCameraCoordsEndpointModule::StartupModule() {}

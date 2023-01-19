@@ -2,15 +2,16 @@
 
 #include "RedHermesGraphNodeEndpointEditorExtension.h"
 
-#include "GraphEditorModule.h"
-#include "RedHermesGraphNodeEndpointUtils.h"
-#include "RedTalaria.h"
 #include "Algo/AllOf.h"
-#include "Algo/AnyOf.h"
 #include "EdGraph/EdGraph.h"
 #include "EdGraph/EdGraphNode.h"
 #include "EdGraph/EdGraphPin.h"
+#include "Framework/MultiBox/MultiBoxBuilder.h"
+#include "GraphEditorModule.h"
 #include "HAL/PlatformApplicationMisc.h"
+#include "Modules/ModuleManager.h"
+#include "RedHermesGraphNodeEndpointUtils.h"
+#include "RedTalaria.h"
 
 #define LOCTEXT_NAMESPACE "Editor.RedHermesGraphNodeEndpointEditorExtension"
 
@@ -50,17 +51,12 @@ TSharedRef<FExtender> URedHermesGraphNodeEndpointEditorExtension::HandleOnExtend
 	for (const FName ExtensionHook : ExtensionHooks)
 	{
 		TArray<FCopyUrlMenuEntry> MenuEntries = {
-			{
-				LOCTEXT("NodeAction.CopyFocusUrl", "Copy 'Focus node' URL"),
+			{LOCTEXT("NodeAction.CopyFocusUrl", "Copy 'Focus node' URL"),
 				LOCTEXT("NodeAction.CopyFocusUrlTooltip", "Copy an URL that will open this asset and focus on this node."),
-				FRedHermesGraphNodeEndpointUtils::GetFocusUrlForNodeInGraph(Node, Graph)
-			},
-			{
-				LOCTEXT("NodeAction.CopyJumpTargetUrl", "Copy 'Open node' URL"),
+				FRedHermesGraphNodeEndpointUtils::GetFocusUrlForNodeInGraph(Node, Graph)},
+			{LOCTEXT("NodeAction.CopyJumpTargetUrl", "Copy 'Open node' URL"),
 				LOCTEXT("NodeAction.CopyJumpTargetUrlTooltip", "Copy an URL that will open (the jump target of) this node."),
-				FRedHermesGraphNodeEndpointUtils::GetOpenJumpTargetUrlForNodeInGraph(Node, Graph)
-			}
-		};
+				FRedHermesGraphNodeEndpointUtils::GetOpenJumpTargetUrlForNodeInGraph(Node, Graph)}};
 
 		Extender->AddMenuExtension(
 			ExtensionHook,

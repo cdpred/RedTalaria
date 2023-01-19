@@ -3,6 +3,9 @@
 #include "RedTalaria.h"
 
 #include "Interfaces/IPluginManager.h"
+#include "Modules/ModuleManager.h"
+#include "Runtime/Launch/Resources/Version.h"
+#include "Styling/CoreStyle.h"
 #include "Styling/SlateStyle.h"
 #include "Styling/SlateStyleRegistry.h"
 
@@ -13,9 +16,15 @@ const FName FRedTalariaModule::TalariaIconSlateStyleName = TEXT("RedTalariaModul
 
 const FString RedTalariaPluginName(TEXT("RedTalaria"));
 
-void FRedTalariaModule::StartupModule() { RegisterSlateStyle(); }
+void FRedTalariaModule::StartupModule()
+{
+	RegisterSlateStyle();
+}
 
-void FRedTalariaModule::ShutdownModule() { UnregisterSlateStyle(); }
+void FRedTalariaModule::ShutdownModule()
+{
+	UnregisterSlateStyle();
+}
 
 void FRedTalariaModule::RegisterSlateStyle()
 {

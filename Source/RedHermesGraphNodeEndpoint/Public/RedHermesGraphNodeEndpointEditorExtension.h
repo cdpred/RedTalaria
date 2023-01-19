@@ -8,6 +8,7 @@
 
 #include "RedHermesGraphNodeEndpointEditorExtension.generated.h"
 
+class FMenuBuilder;
 class FExtender;
 class FUICommandList;
 class UEdGraph;

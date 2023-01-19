@@ -2,9 +2,11 @@
 
 #include "RedHermesGraphNodeEndpointUtils.h"
 
-#include "RedTalariaGraphNodeUrls.h"
 #include "AssetRegistry/AssetRegistryModule.h"
 #include "AssetRegistry/IAssetRegistry.h"
+#include "EdGraph/EdGraph.h"
+#include "EdGraph/EdGraphNode.h"
+#include "RedTalariaGraphNodeUrls.h"
 
 UObject* FRedHermesGraphNodeEndpointUtils::GetGraphOwnerAsset(const UEdGraph* Graph)
 {

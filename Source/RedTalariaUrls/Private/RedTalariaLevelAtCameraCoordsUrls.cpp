@@ -2,8 +2,9 @@
 
 #include "RedTalariaLevelAtCameraCoordsUrls.h"
 
-#include "HermesServer.h"
 #include "Algo/Transform.h"
+#include "HermesServer.h"
+#include "Modules/ModuleManager.h"
 
 const FName FRedTalariaLevelAtCameraCoordsUrls::HermesEndpointId = TEXT("level_coords");
 const FString FRedTalariaLevelAtCameraCoordsUrls::CameraLocationXParamName = TEXT("lx");
@@ -23,8 +24,7 @@ FString FRedTalariaLevelAtCameraCoordsUrls::GetUrlForLevelAtLocationAtRotation(F
 			{CameraLocationZParamName, Location.Z},
 			{CameraRotationPParamName, Rotation.Pitch},
 			{CameraRotationYParamName, Rotation.Yaw},
-			{CameraRotationRParamName, Rotation.Roll}
-		};
+			{CameraRotationRParamName, Rotation.Roll}};
 
 		TArray<FString> QueryParams;
 		Algo::Transform(QueryParamMap, QueryParams, [](const auto& Pair) {
