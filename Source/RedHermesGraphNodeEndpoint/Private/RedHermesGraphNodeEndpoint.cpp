@@ -1,4 +1,4 @@
-// Copyright (c) CD PROJEKT S.A. All Rights Reserved.
+// Copyright (c) CD PROJEKT S.A.
 
 #include "RedHermesGraphNodeEndpoint.h"
 
