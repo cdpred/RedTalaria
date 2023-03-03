@@ -1,3 +1,8 @@
+# Version 1.1.0
+
+New functionality:
+* linking folders in the content browser
+
 # Version 1.0.1
 
 New functionality:

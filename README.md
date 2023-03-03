@@ -38,6 +38,15 @@ Once you've set up RedTalaria, under the Viewport options menu you should see a 
 
 Clicking on links like these will open up the level at the exact camera location / rotation for when the link was made.
 
+## Linking folders in the content browser
+
+Once you've set up RedTalaria, when right clicking on a folder in the content browser you should see a new `Copy folder URL` option:
+
+[<img src="README_link_content_folder_1.png?raw=true">](README_link_content_folder_1.png?raw=true)
+[<img src="README_link_content_folder_2.png?raw=true">](README_link_content_folder_2.png?raw=true)
+
+Clicking on links like these will focus the given folder in the content browser.
+
 # Extending
 
 ## Creating custom URLs for graph nodes

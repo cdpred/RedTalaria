@@ -1,7 +1,7 @@
 {
   "FileVersion": 3,
   "Version": 1,
-  "VersionName": "1.0.1",
+  "VersionName": "1.1.0",
   "FriendlyName": "RedTalaria",
   "Description": "A collection of Hermes endpoints. Hermes icons created by max.icons - Flaticon : https://www.flaticon.com/free-icons/hermes",
   "Category": "Other",
@@ -48,6 +48,14 @@
       "Name": "RedHermesLevelAtCameraCoordsEndpoint",
       "Type": "EditorNoCommandlet",
       "LoadingPhase": "PostEngineInit",
+      "WhitelistPlatforms": [
+        "Win64"
+      ]
+    },
+    {
+      "Name": "RedHermesContentFolderEndpoint",
+      "Type": "EditorNoCommandlet",
+      "LoadingPhase": "Default",
       "WhitelistPlatforms": [
         "Win64"
       ]
