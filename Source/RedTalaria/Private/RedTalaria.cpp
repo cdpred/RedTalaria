@@ -1,4 +1,4 @@
-﻿// Copyright (c) CD PROJEKT S.A.
+// Copyright (c) CD PROJEKT S.A.
 
 #include "RedTalaria.h"
 
@@ -14,8 +14,6 @@
 const FName FRedTalariaModule::SlateStyleSetName = TEXT("RedTalariaModuleStyleSet");
 const FName FRedTalariaModule::TalariaIconSlateStyleName = TEXT("RedTalariaModule_TalariaIcon");
 
-const FString RedTalariaPluginName(TEXT("RedTalaria"));
-
 void FRedTalariaModule::StartupModule()
 {
 	RegisterSlateStyle();
@@ -28,7 +26,7 @@ void FRedTalariaModule::ShutdownModule()
 
 void FRedTalariaModule::RegisterSlateStyle()
 {
-	const auto Plugin = IPluginManager::Get().FindPlugin(RedTalariaPluginName);
+	const auto Plugin = IPluginManager::Get().FindPlugin(UE_PLUGIN_NAME);
 	checkf(Plugin, TEXT("Couldn't load our own plugin descriptor"));
 
 	SlateStyle = MakeShareable(new FSlateStyleSet(SlateStyleSetName));
