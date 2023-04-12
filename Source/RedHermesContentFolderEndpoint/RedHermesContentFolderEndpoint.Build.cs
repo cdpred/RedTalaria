@@ -11,7 +11,7 @@ public class RedHermesContentFolderEndpoint : ModuleRules
 		PublicDependencyModuleNames.AddRange(
 			new[]
 			{
-				"Core"
+				"Core",
 			}
 		);
 
@@ -27,7 +27,7 @@ public class RedHermesContentFolderEndpoint : ModuleRules
 				"EditorSubsystem",
 				"ContentBrowserData",
 				"ToolMenus",
-				"ApplicationCore"
+				"ApplicationCore",
 			}
 		);
 	}

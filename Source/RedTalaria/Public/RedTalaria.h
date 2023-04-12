@@ -1,10 +1,10 @@
-﻿// Copyright (c) CD PROJEKT S.A.
+// Copyright (c) CD PROJEKT S.A.
 
 #pragma once
 
-#include "CoreMinimal.h"
-
 #include "Modules/ModuleInterface.h"
+#include "Templates/SharedPointer.h"
+#include "UObject/NameTypes.h"
 
 class FSlateStyleSet;
 

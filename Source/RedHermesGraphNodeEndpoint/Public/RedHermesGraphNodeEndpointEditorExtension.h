@@ -2,8 +2,6 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
-
 #include "EditorSubsystem.h"
 
 #include "RedHermesGraphNodeEndpointEditorExtension.generated.h"
@@ -21,7 +19,7 @@ class REDHERMESGRAPHNODEENDPOINT_API URedHermesGraphNodeEndpointEditorExtension 
 	GENERATED_BODY()
 
 public:
-	DECLARE_MULTICAST_DELEGATE_ThreeParams(FOnNodeMenuExtensionHookRequestDelegate, const UEdGraphNode*, const UEdGraph*, TSet<FName>&);
+	DECLARE_MULTICAST_DELEGATE_ThreeParams(FOnNodeMenuExtensionHookRequestDelegate, const UEdGraphNode*, const UEdGraph*, TSet<FName>&)
 
 	virtual void Initialize(FSubsystemCollectionBase& Collection) override;
 	virtual void Deinitialize() override;

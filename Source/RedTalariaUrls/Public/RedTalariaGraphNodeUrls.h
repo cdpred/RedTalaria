@@ -2,7 +2,8 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
+#include "Containers/UnrealString.h"
+#include "UObject/NameTypes.h"
 
 class REDTALARIAURLS_API FRedTalariaGraphNodeUrls
 {

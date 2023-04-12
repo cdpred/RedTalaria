@@ -1,4 +1,4 @@
-﻿// Copyright (c) CD PROJEKT S.A.
+// Copyright (c) CD PROJEKT S.A.
 
 #include "RedHermesBlueprintNodeEndpoint.h"
 

@@ -2,8 +2,6 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
-
 #include "EditorSubsystem.h"
 #include "HermesServer.h"
 
@@ -20,10 +18,10 @@ public:
 
 protected:
 	virtual FName GetHermesEndpointId() const
-	PURE_VIRTUAL(URedHermesEndpoint::GetHermesEndpointId, return FName(););
+		PURE_VIRTUAL(URedHermesEndpoint::GetHermesEndpointId, return FName(););
 
 	virtual void ProcessRequest(const FString& Path, const FHermesQueryParamsMap& QueryParams) const
-	PURE_VIRTUAL(URedHermesEndpoint::ProcessRequest,);
+		PURE_VIRTUAL(URedHermesEndpoint::ProcessRequest, );
 
 private:
 	struct FPendingRequest

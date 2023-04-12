@@ -1,8 +1,7 @@
-﻿// Copyright (c) CD PROJEKT S.A.
+// Copyright (c) CD PROJEKT S.A.
 
 #pragma once
 
-#include "CoreMinimal.h"
 #include "RedHermesEndpoint.h"
 
 #include "RedHermesLevelAtCameraCoordsEndpoint.generated.h"

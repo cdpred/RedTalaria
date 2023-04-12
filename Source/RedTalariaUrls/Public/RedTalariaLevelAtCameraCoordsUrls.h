@@ -1,8 +1,9 @@
-﻿// Copyright (c) CD PROJEKT S.A.
+// Copyright (c) CD PROJEKT S.A.
 
 #pragma once
 
-#include "CoreMinimal.h"
+#include "Containers/UnrealString.h"
+#include "UObject/NameTypes.h"
 
 class REDTALARIAURLS_API FRedTalariaLevelAtCameraCoordsUrls
 {

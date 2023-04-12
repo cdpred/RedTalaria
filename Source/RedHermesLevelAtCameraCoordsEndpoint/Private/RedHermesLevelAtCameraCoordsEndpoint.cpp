@@ -1,4 +1,4 @@
-﻿// Copyright (c) CD PROJEKT S.A.
+// Copyright (c) CD PROJEKT S.A.
 
 #include "RedHermesLevelAtCameraCoordsEndpoint.h"
 
@@ -31,27 +31,26 @@ void URedHermesLevelAtCameraCoordsEndpoint::ProcessRequest(const FString& Path, 
 			AssetEditorSubsystem->OpenEditorForAsset(Asset);
 
 			if (
-				QueryParams.Contains(FRedTalariaLevelAtCameraCoordsUrls::CameraLocationXParamName) &&
-				QueryParams.Contains(FRedTalariaLevelAtCameraCoordsUrls::CameraLocationYParamName) &&
-				QueryParams.Contains(FRedTalariaLevelAtCameraCoordsUrls::CameraLocationZParamName) &&
-				QueryParams.Contains(FRedTalariaLevelAtCameraCoordsUrls::CameraRotationPParamName) &&
-				QueryParams.Contains(FRedTalariaLevelAtCameraCoordsUrls::CameraRotationYParamName) &&
-				QueryParams.Contains(FRedTalariaLevelAtCameraCoordsUrls::CameraRotationRParamName)
-			)
+				QueryParams.Contains(FRedTalariaLevelAtCameraCoordsUrls::CameraLocationXParamName) && //
+				QueryParams.Contains(FRedTalariaLevelAtCameraCoordsUrls::CameraLocationYParamName) && //
+				QueryParams.Contains(FRedTalariaLevelAtCameraCoordsUrls::CameraLocationZParamName) && //
+				QueryParams.Contains(FRedTalariaLevelAtCameraCoordsUrls::CameraRotationPParamName) && //
+				QueryParams.Contains(FRedTalariaLevelAtCameraCoordsUrls::CameraRotationYParamName) && //
+				QueryParams.Contains(FRedTalariaLevelAtCameraCoordsUrls::CameraRotationRParamName))
 			{
 				for (FLevelEditorViewportClient* LevelVC : GEditor->GetLevelViewportClients())
 				{
 					if (LevelVC && LevelVC->IsPerspective())
 					{
 						LevelVC->SetViewLocation({
-							FCString::Atof(*QueryParams[FRedTalariaLevelAtCameraCoordsUrls::CameraLocationXParamName]),
-							FCString::Atof(*QueryParams[FRedTalariaLevelAtCameraCoordsUrls::CameraLocationYParamName]),
-							FCString::Atof(*QueryParams[FRedTalariaLevelAtCameraCoordsUrls::CameraLocationZParamName])
+							FCString::Atof(*QueryParams[FRedTalariaLevelAtCameraCoordsUrls::CameraLocationXParamName]), //
+							FCString::Atof(*QueryParams[FRedTalariaLevelAtCameraCoordsUrls::CameraLocationYParamName]), //
+							FCString::Atof(*QueryParams[FRedTalariaLevelAtCameraCoordsUrls::CameraLocationZParamName])	//
 						});
 						LevelVC->SetViewRotation({
-							FCString::Atof(*QueryParams[FRedTalariaLevelAtCameraCoordsUrls::CameraRotationPParamName]),
-							FCString::Atof(*QueryParams[FRedTalariaLevelAtCameraCoordsUrls::CameraRotationYParamName]),
-							FCString::Atof(*QueryParams[FRedTalariaLevelAtCameraCoordsUrls::CameraRotationRParamName])
+							FCString::Atof(*QueryParams[FRedTalariaLevelAtCameraCoordsUrls::CameraRotationPParamName]), //
+							FCString::Atof(*QueryParams[FRedTalariaLevelAtCameraCoordsUrls::CameraRotationYParamName]), //
+							FCString::Atof(*QueryParams[FRedTalariaLevelAtCameraCoordsUrls::CameraRotationRParamName])	//
 						});
 						break;
 					}

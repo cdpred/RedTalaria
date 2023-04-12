@@ -12,7 +12,7 @@ public class RedHermesLevelAtCameraCoordsEndpoint : ModuleRules
 			new[]
 			{
 				"Core",
-				"RedTalaria"
+				"RedTalaria",
 			}
 		);
 
@@ -29,7 +29,7 @@ public class RedHermesLevelAtCameraCoordsEndpoint : ModuleRules
 				"ToolMenus",
 				"LevelEditor",
 				"ApplicationCore",
-				"MainFrame"
+				"MainFrame",
 			}
 		);
 	}

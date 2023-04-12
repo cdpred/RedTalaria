@@ -11,7 +11,7 @@ public class RedHermesBlueprintNodeEndpoint : ModuleRules
 		PublicDependencyModuleNames.AddRange(
 			new[]
 			{
-				"Core"
+				"Core",
 			}
 		);
 
@@ -24,7 +24,7 @@ public class RedHermesBlueprintNodeEndpoint : ModuleRules
 				"SlateCore",
 				"UnrealEd",
 				"RedHermesGraphNodeEndpoint",
-				"BlueprintGraph"
+				"BlueprintGraph",
 			}
 		);
 	}

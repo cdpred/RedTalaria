@@ -12,7 +12,7 @@ public class RedHermesGraphNodeEndpoint : ModuleRules
 			new[]
 			{
 				"Core",
-				"RedTalaria"
+				"RedTalaria",
 			}
 		);
 
@@ -29,7 +29,7 @@ public class RedHermesGraphNodeEndpoint : ModuleRules
 				"ToolMenus",
 				"UnrealEd",
 				"EditorSubsystem",
-				"MainFrame"
+				"MainFrame",
 			}
 		);
 	}

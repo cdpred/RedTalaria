@@ -2,7 +2,6 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
 #include "RedHermesEndpoint.h"
 
 #include "RedHermesGraphNodeEndpoint.generated.h"
@@ -15,7 +14,10 @@ class REDHERMESGRAPHNODEENDPOINT_API URedHermesGraphNodeEndpoint : public URedHe
 public:
 	DECLARE_MULTICAST_DELEGATE_ThreeParams(FOnReqestDelegate, FGuid NodeGuid, UObject* Asset, bool bOpenJumpTarget)
 
-	FOnReqestDelegate& OnRequest() { return OnRequestDelegate; }
+	FOnReqestDelegate& OnRequest()
+	{
+		return OnRequestDelegate;
+	}
 
 protected:
 	virtual FName GetHermesEndpointId() const override;

@@ -1,9 +1,8 @@
-﻿// Copyright (c) CD PROJEKT S.A.
+// Copyright (c) CD PROJEKT S.A.
 
 #pragma once
 
-#include "CoreMinimal.h"
-
+#include "Delegates/IDelegateInstance.h"
 #include "Modules/ModuleInterface.h"
 #include "UObject/NameTypes.h"
 

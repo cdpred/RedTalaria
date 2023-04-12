@@ -2,9 +2,10 @@
 
 #include "RedHermesGraphNodeEndpoint.h"
 
+#include "RedTalariaGraphNodeUrls.h"
+#include "AssetRegistry/AssetData.h"
 #include "AssetRegistry/AssetRegistryModule.h"
 #include "Interfaces/IMainFrameModule.h"
-#include "RedTalariaGraphNodeUrls.h"
 #include "Widgets/SWindow.h"
 
 DEFINE_LOG_CATEGORY_STATIC(LogRedHermesGraphNodeEndpoint, Log, All);

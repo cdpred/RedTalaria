@@ -1,4 +1,4 @@
-﻿// Copyright (c) CD PROJEKT S.A.
+// Copyright (c) CD PROJEKT S.A.
 
 using UnrealBuildTool;
 
@@ -12,7 +12,7 @@ public class RedTalaria : ModuleRules
 			new[]
 			{
 				"Core",
-				"HermesServer"
+				"HermesServer",
 			}
 		);
 
@@ -24,7 +24,7 @@ public class RedTalaria : ModuleRules
 				"Slate",
 				"SlateCore",
 				"EditorSubsystem",
-				"Projects"
+				"Projects",
 			}
 		);
 	}
