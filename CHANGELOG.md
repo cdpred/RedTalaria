@@ -1,3 +1,11 @@
+# Version 1.2.0
+
+New functionality:
+* linking BehaviorTree nodes
+
+Misc:
+* general cleanup, formatting & IWYU pass
+
 # Version 1.1.0
 
 New functionality:
