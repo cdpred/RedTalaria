@@ -1,73 +1,81 @@
 {
-  "FileVersion": 3,
-  "Version": 1,
-  "VersionName": "1.1.0",
-  "FriendlyName": "RedTalaria",
-  "Description": "A collection of Hermes endpoints. Hermes icons created by max.icons - Flaticon : https://www.flaticon.com/free-icons/hermes",
-  "Category": "Other",
-  "CreatedBy": "CD PROJEKT S.A.",
-  "CreatedByURL": "",
-  "DocsURL": "",
-  "MarketplaceURL": "",
-  "SupportURL": "",
-  "CanContainContent": true,
-  "IsBetaVersion": false,
-  "IsExperimentalVersion": false,
-  "Installed": false,
-  "Modules": [
-    {
-      "Name": "RedTalariaUrls",
-      "Type": "Runtime",
-      "LoadingPhase": "Default"
-    },
-    {
-      "Name": "RedTalaria",
-      "Type": "EditorNoCommandlet",
-      "LoadingPhase": "Default",
-      "WhitelistPlatforms": [
-        "Win64"
-      ]
-    },
-    {
-      "Name": "RedHermesGraphNodeEndpoint",
-      "Type": "EditorNoCommandlet",
-      "LoadingPhase": "Default",
-      "WhitelistPlatforms": [
-        "Win64"
-      ]
-    },
-    {
-      "Name": "RedHermesBlueprintNodeEndpoint",
-      "Type": "EditorNoCommandlet",
-      "LoadingPhase": "PostEngineInit",
-      "WhitelistPlatforms": [
-        "Win64"
-      ]
-    },
-    {
-      "Name": "RedHermesLevelAtCameraCoordsEndpoint",
-      "Type": "EditorNoCommandlet",
-      "LoadingPhase": "PostEngineInit",
-      "WhitelistPlatforms": [
-        "Win64"
-      ]
-    },
-    {
-      "Name": "RedHermesContentFolderEndpoint",
-      "Type": "EditorNoCommandlet",
-      "LoadingPhase": "Default",
-      "WhitelistPlatforms": [
-        "Win64"
-      ]
-    }
-  ],
-  "Plugins": [
-    {
-      "Name": "HermesCore",
-      "Enabled": true,
-      "WhitelistPlatforms": [
-        "Win64"
-      ]
-    }
-  ]
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.1.0",
+	"FriendlyName": "RedTalaria",
+	"Description": "A collection of Hermes endpoints. Hermes icons created by max.icons - Flaticon : https://www.flaticon.com/free-icons/hermes",
+	"Category": "Other",
+	"CreatedBy": "CD PROJEKT S.A.",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "RedTalariaUrls",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "RedTalaria",
+			"Type": "EditorNoCommandlet",
+			"LoadingPhase": "Default",
+			"WhitelistPlatforms": [
+				"Win64"
+			]
+		},
+		{
+			"Name": "RedHermesGraphNodeEndpoint",
+			"Type": "EditorNoCommandlet",
+			"LoadingPhase": "Default",
+			"WhitelistPlatforms": [
+				"Win64"
+			]
+		},
+		{
+			"Name": "RedHermesBlueprintNodeEndpoint",
+			"Type": "EditorNoCommandlet",
+			"LoadingPhase": "PostEngineInit",
+			"WhitelistPlatforms": [
+				"Win64"
+			]
+		},
+		{
+			"Name": "RedHermesBehaviorTreeNodeEndpoint",
+			"Type": "EditorNoCommandlet",
+			"LoadingPhase": "PostEngineInit",
+			"WhitelistPlatforms": [
+				"Win64"
+			]
+		},
+		{
+			"Name": "RedHermesLevelAtCameraCoordsEndpoint",
+			"Type": "EditorNoCommandlet",
+			"LoadingPhase": "PostEngineInit",
+			"WhitelistPlatforms": [
+				"Win64"
+			]
+		},
+		{
+			"Name": "RedHermesContentFolderEndpoint",
+			"Type": "EditorNoCommandlet",
+			"LoadingPhase": "Default",
+			"WhitelistPlatforms": [
+				"Win64"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "HermesCore",
+			"Enabled": true,
+			"WhitelistPlatforms": [
+				"Win64"
+			]
+		}
+	]
 }
