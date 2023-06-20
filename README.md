@@ -31,6 +31,15 @@ For nodes that have a jump target, you'll see an additional `Copy 'Open node' UR
 
 Clicking on links like these will open up the (jump target of the) linked node in the editor.
 
+## Linking BehaviorTree nodes
+This feature is only available in UE 5.3+, if you are using a source build, make sure you have [this commit](https://github.com/EpicGames/UnrealEngine/commit/6bb52ead8294554e5bdb60f637729eae397942d8).
+
+Once you've set up RedTalaria, you should be able to right click on any BehaviorTree node and see a new `Copy 'Focus node' URL` option:
+
+[<img src="README_link_behavior_tree_node_focus.png?raw=true">](README_link_behavior_tree_node_focus.png?raw=true)
+
+Clicking on links like these will open up the asset in the editor and focus on the linked node.
+
 ## Linking Levels at a specific camera position
 Once you've set up RedTalaria, under the Viewport options menu you should see a new `Copy camera coords URL` option (it will only be active for perspective viewports):
 
