@@ -25,10 +25,15 @@ void URedHermesLevelAtCameraCoordsEndpoint::ProcessRequest(const FString& Path, 
 	if (AssetData.Num() > 0)
 	{
 		UObject* Asset = AssetData[0].GetAsset();
-		if (Asset->IsA<UWorld>())
+		if (auto* World = Cast<UWorld>(Asset))
 		{
-			UAssetEditorSubsystem* AssetEditorSubsystem = GEditor->GetEditorSubsystem<UAssetEditorSubsystem>();
-			AssetEditorSubsystem->OpenEditorForAsset(Asset);
+			if (GEditor->GetEditorWorldContext().World() != World)
+			{
+				if (auto* AssetEditorSubsystem = GEditor->GetEditorSubsystem<UAssetEditorSubsystem>())
+				{
+					AssetEditorSubsystem->OpenEditorForAsset(World);
+				}
+			}
 
 			if (
 				QueryParams.Contains(FRedTalariaLevelAtCameraCoordsUrls::CameraLocationXParamName) && //
