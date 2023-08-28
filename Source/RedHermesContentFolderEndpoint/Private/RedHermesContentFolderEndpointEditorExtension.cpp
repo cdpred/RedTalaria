@@ -7,6 +7,7 @@
 #include "RedTalariaContentFolderUrls.h"
 #include "ToolMenus.h"
 #include "HAL/PlatformApplicationMisc.h"
+#include "Runtime/Launch/Resources/Version.h"
 
 #define LOCTEXT_NAMESPACE "Editor.RedHermesContentFolderEndpointEditorExtension"
 
@@ -29,7 +30,12 @@ void URedHermesContentFolderEndpointEditorExtension::RegisterContentBrowserFolde
 		if (const UContentBrowserDataMenuContext_FolderMenu* Context = GetContextWithSingleFolderSelected(MenuContext))
 		{
 			FPlatformApplicationMisc::ClipboardCopy(
-				*FRedTalariaContentFolderUrls::GetUrlForContentFolder(Context->SelectedItems[0].GetInvariantPath()));
+#if ENGINE_MAJOR_VERSION >= 5
+				*FRedTalariaContentFolderUrls::GetUrlForContentFolder(Context->SelectedItems[0].GetInvariantPath())
+#else
+				*FRedTalariaContentFolderUrls::GetUrlForContentFolder(Context->SelectedItems[0].GetVirtualPath())
+#endif
+			);
 		}
 	});
 	CopyLinkToFolderAction.CanExecuteAction.BindLambda([](const FToolMenuContext& MenuContext) {
