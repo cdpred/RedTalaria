@@ -27,8 +27,16 @@ public class RedHermesBehaviorTreeNodeEndpoint : ModuleRules
 				"RedHermesGraphNodeEndpoint",
 				"AIGraph",
 				"BehaviorTreeEditor",
-				"EditorFramework",
 			}
 		);
+
+		BuildVersion Version;
+		if (BuildVersion.TryRead(BuildVersion.GetDefaultFileName(), out Version))
+		{
+			if (Version.MajorVersion >= 5)
+			{
+				PrivateDependencyModuleNames.Add("EditorFramework");
+			}
+		}
 	}
 }
