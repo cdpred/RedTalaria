@@ -3,7 +3,7 @@
 #include "RedHermesBehaviorTreeNodeEndpoint.h"
 
 #if ENGINE_MAJOR_VERSION >= 5 && ENGINE_MINOR_VERSION >= 3
-#include "BehaviorTreeGraphNode.h"
+#include "BehaviorTreeGraph.h"
 #include "Editor.h"
 #include "IBehaviorTreeEditor.h"
 #include "RedHermesGraphNodeEndpoint.h"
@@ -94,7 +94,9 @@ void FRedHermesBehaviorTreeNodeEndpointModule::HandleRequest(FGuid NodeGuid, UOb
 
 void FRedHermesBehaviorTreeNodeEndpointModule::ProvideNodeExtensionHook(const UEdGraphNode* Node, const UEdGraph* /*Graph*/, TSet<FName>& ExtensionHooks)
 {
-	if (Node->IsA<UBehaviorTreeGraphNode>())
+	// Determinate that Node is a UBehaviorTreeGraphNode
+	// Can't use UBehaviorTreeGraphNode::StaticClass(), because it's not exposed to API
+	if (Node->GetGraph()->IsA<UBehaviorTreeGraph>())
 	{
 		ExtensionHooks.Emplace(FName(TEXT("BehaviorTreeGraphSchemaNodeActions")));
 	}
