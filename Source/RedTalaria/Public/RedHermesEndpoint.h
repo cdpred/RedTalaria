@@ -18,10 +18,10 @@ public:
 
 protected:
 	virtual FName GetHermesEndpointId() const
-		PURE_VIRTUAL(URedHermesEndpoint::GetHermesEndpointId, return FName(););
+		PURE_VIRTUAL(URedHermesEndpoint::GetHermesEndpointId, return NAME_None;);
 
 	virtual void ProcessRequest(const FString& Path, const FHermesQueryParamsMap& QueryParams) const
-		PURE_VIRTUAL(URedHermesEndpoint::ProcessRequest, );
+		PURE_VIRTUAL(URedHermesEndpoint::ProcessRequest,);
 
 private:
 	struct FPendingRequest
