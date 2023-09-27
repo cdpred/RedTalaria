@@ -20,6 +20,7 @@ public class RedTalariaUrls : ModuleRules
 			{
 				"CoreUObject",
 				"Engine",
+				"HTTP",
 				"Slate",
 				"SlateCore",
 			}
