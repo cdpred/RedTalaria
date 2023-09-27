@@ -1,3 +1,14 @@
+# Version 1.3.0
+
+New functionality:
+* linking level actors
+* linking automated tests
+
+Misc:
+* LevelAtCameraCoordsEndpoint: don't (re)load the linked level if it's already opened in the editor
+* Add `FRedTalariaContentUrls::GetUrlForPackage`
+* various compilation and code style fixes
+
 # Version 1.2.0
 
 New functionality:
