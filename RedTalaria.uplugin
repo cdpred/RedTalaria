@@ -75,6 +75,14 @@
 			"WhitelistPlatforms": [
 				"Win64"
 			]
+		}, 
+		{
+			"Name": "RedHermesAutomationEndpoint",
+			"Type": "EditorNoCommandlet",
+			"LoadingPhase": "Default",
+			"WhitelistPlatforms": [
+				"Win64"
+			]
 		}
 	],
 	"Plugins": [

@@ -67,6 +67,21 @@ Once you've set up RedTalaria, you should be able to right click on any actor pl
 Clicking on links like these will open up the level the actor is placed in, select the actor in the outliner and focus the camera on the actor.
 If the level is partitioned, the actor will be loaded (even if it resides in a currently unloaded region).
 
+## Linking automated tests
+This feature is only available in UE 5+.
+
+Once you've set up RedTalaria, you should be able to link automated tests like so:
+```
+YOUR_PROJECT://automation?test_name_filter=YOUR_TEST_NAME_FILTER_STRING_URL_ENCODED
+```
+Spaces in the test name filter have to be encoded as `%20`.
+
+Clicking on links like these will open up the session frontend window and execute all tests matching the given test name filter.
+
+Example links to engine provided tests (for UE 5.3 projects):
+* `YOUR_PROJECT://automation?test_name_filter=TestFramework.Log.Add%20Log%20Message` (runs one test)
+* `YOUR_PROJECT://automation?test_name_filter=TestFramework.Log` (runs 3 tests)
+
 # Extending
 
 ## Creating custom URLs for graph nodes
