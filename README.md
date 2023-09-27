@@ -6,7 +6,7 @@ Big thanks to [Jørgen P. Tjernø](https://github.com/jorgenpt) for [Hermes](htt
 
 # Engine compatibilty
 
-RedTalaria was tested (and thus should be compatible) with UE 5.1 and UE 4.27.
+RedTalaria was tested (and thus should be compatible) with UE 5.3 and UE 4.27.
 
 # Setup
 
@@ -55,6 +55,17 @@ Once you've set up RedTalaria, when right clicking on a folder in the content br
 [<img src="README_link_content_folder_2.png?raw=true">](README_link_content_folder_2.png?raw=true)
 
 Clicking on links like these will focus the given folder in the content browser.
+
+## Linking level actors
+This feature is only available in UE 5.3+, and only for actors with external packaging ([OFPA](https://docs.unrealengine.com/5.3/en-US/one-file-per-actor-in-unreal-engine/)).
+
+Once you've set up RedTalaria, you should be able to right click on any actor placed in a level or in the outliner and see a new `Copy selected actor URL(s)` option:
+
+[<img src="README_link_level_actor_from_viewport.png?raw=true">](README_link_level_actor_from_viewport.png?raw=true)
+[<img src="README_link_level_actor_from_outliner.png?raw=true">](README_link_level_actor_from_outliner.png?raw=true)
+
+Clicking on links like these will open up the level the actor is placed in, select the actor in the outliner and focus the camera on the actor.
+If the level is partitioned, the actor will be loaded (even if it resides in a currently unloaded region).
 
 # Extending
 
