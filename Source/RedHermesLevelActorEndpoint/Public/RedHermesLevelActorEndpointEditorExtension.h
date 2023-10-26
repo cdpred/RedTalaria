@@ -2,11 +2,14 @@
 
 #pragma once
 
-#include "Runtime/Launch/Resources/Version.h"
-
 #include "EditorSubsystem.h"
 
 #include "RedHermesLevelActorEndpointEditorExtension.generated.h"
+
+class FExtender;
+class FUICommandList;
+class FMenuBuilder;
+class AActor;
 
 UCLASS()
 class URedHermesLevelActorEndpointEditorExtension : public UEditorSubsystem

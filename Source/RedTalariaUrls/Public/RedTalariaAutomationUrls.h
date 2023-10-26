@@ -2,6 +2,9 @@
 
 #pragma once
 
+#include "Containers/UnrealString.h"
+#include "UObject/NameTypes.h"
+
 class REDTALARIAURLS_API FRedTalariaAutomationUrls
 {
 public:

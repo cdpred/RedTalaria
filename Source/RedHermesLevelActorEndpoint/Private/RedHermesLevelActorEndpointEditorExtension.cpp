@@ -7,6 +7,7 @@
 #include "RedTalariaLevelActorUrls.h"
 #include "ToolMenus.h"
 #include "HAL/PlatformApplicationMisc.h"
+#include "Runtime/Launch/Resources/Version.h"
 
 #define LOCTEXT_NAMESPACE "Editor.RedHermesLevelActorEndpointEditorExtension"
 
