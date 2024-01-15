@@ -6,6 +6,7 @@ public class RedHermesGraphNodeEndpoint : ModuleRules
 {
 	public RedHermesGraphNodeEndpoint(ReadOnlyTargetRules Target) : base(Target)
 	{
+		ShortName = "RedHermesGNE";
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
 		PublicDependencyModuleNames.AddRange(

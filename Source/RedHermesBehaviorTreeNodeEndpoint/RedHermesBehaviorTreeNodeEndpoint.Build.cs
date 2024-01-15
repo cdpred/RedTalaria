@@ -6,6 +6,7 @@ public class RedHermesBehaviorTreeNodeEndpoint : ModuleRules
 {
 	public RedHermesBehaviorTreeNodeEndpoint(ReadOnlyTargetRules Target) : base(Target)
 	{
+		ShortName = "RedHermesBTNE";
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
 		PublicDependencyModuleNames.AddRange(

@@ -6,6 +6,7 @@ public class RedHermesLevelAtCameraCoordsEndpoint : ModuleRules
 {
 	public RedHermesLevelAtCameraCoordsEndpoint(ReadOnlyTargetRules Target) : base(Target)
 	{
+		ShortName = "RedHermesLACCE";
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
 		PublicDependencyModuleNames.AddRange(

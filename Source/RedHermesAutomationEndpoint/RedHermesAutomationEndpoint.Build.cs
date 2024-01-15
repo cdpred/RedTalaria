@@ -6,6 +6,7 @@ public class RedHermesAutomationEndpoint : ModuleRules
 {
 	public RedHermesAutomationEndpoint(ReadOnlyTargetRules Target) : base(Target)
 	{
+		ShortName = "RedHermesAE";
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
 		PublicDependencyModuleNames.AddRange(

@@ -6,6 +6,7 @@ public class RedHermesBlueprintNodeEndpoint : ModuleRules
 {
 	public RedHermesBlueprintNodeEndpoint(ReadOnlyTargetRules Target) : base(Target)
 	{
+		ShortName = "RedHermesBNE";
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
 		PublicDependencyModuleNames.AddRange(
