@@ -6,6 +6,7 @@ public class RedHermesContentFolderEndpoint : ModuleRules
 {
 	public RedHermesContentFolderEndpoint(ReadOnlyTargetRules Target) : base(Target)
 	{
+		ShortName = "RedHermesCFE";
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
 		PublicDependencyModuleNames.AddRange(
