@@ -6,6 +6,7 @@ public class RedHermesLevelActorEndpoint : ModuleRules
 {
 	public RedHermesLevelActorEndpoint(ReadOnlyTargetRules Target) : base(Target)
 	{
+		ShortName = "RedHermesLAE";
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
 		PublicDependencyModuleNames.AddRange(
