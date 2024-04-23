@@ -1,6 +1,9 @@
+<!-- Please keep this list sorted alphabetically (case-insensitive). -->
+
 * [ezioleq](https://github.com/ezioleq)
-* [MeetMarkelov](https://github.com/MeetMarkelov)
+* [fastfend](https://github.com/fastfend)
+* [jorgenpt](https://github.com/jorgenpt)
 * [KristofMorva](https://github.com/KristofMorva)
 * [liquidev](https://github.com/liquidev)
-* [fastfend](https://github.com/fastfend)
+* [MeetMarkelov](https://github.com/MeetMarkelov)
 * [zosiu](https://github.com/zosiu)
