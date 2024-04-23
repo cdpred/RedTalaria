@@ -8,7 +8,7 @@ class UEdGraph;
 class UEdGraphNode;
 class UObject;
 
-class FRedHermesGraphNodeEndpointUtils
+class REDHERMESGRAPHNODEENDPOINT_API FRedHermesGraphNodeEndpointUtils
 {
 public:
 	static UObject* GetGraphOwnerAsset(const UEdGraph* Graph);
