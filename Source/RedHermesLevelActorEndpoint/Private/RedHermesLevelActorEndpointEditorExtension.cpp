@@ -88,3 +88,5 @@ void URedHermesLevelActorEndpointEditorExtension::HandleOnExtendContextMenu(FMen
 		})));
 	MenuBuilder.EndSection();
 }
+
+#undef LOCTEXT_NAMESPACE
